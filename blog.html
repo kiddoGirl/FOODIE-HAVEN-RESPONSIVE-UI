@@ -50,11 +50,9 @@
 
 
     <section id="blog-container">
-
-
         <div class="blogs">
-            <div class="post">
-                <img src="images/b1.jpeg" alt="">
+            <div class="post" data-category="gourmet">
+                <img src="images/Gourmet.jpeg" alt="">
                 <h3>Discover the Secrets of Gourmet Cooking</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eum nisi consequuntur voluptatem 
                     impedit quidem sed perspiciatis assumenda dicta necessitatibus
@@ -62,8 +60,8 @@
                 </p>
                 <a href="post.html">Read More</a>
             </div>
-            <div class="post">
-                <img src="images/b2.jpeg" alt="">
+            <div class="post" data-category="quick-easy">
+                <img src="images/Dinner.jpeg" alt="">
                 <h3>10 Quick and Easy Dinner Recipes</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eum nisi consequuntur voluptatem 
                     impedit quidem sed perspiciatis assumenda dicta necessitatibus
@@ -71,8 +69,8 @@
                 </p>
                 <a href="post2.html">Read More</a>
             </div>
-            <div class="post">
-                <img src="images/b3.jpeg" alt="">
+            <div class="post" data-category="baking">
+                <img src="images/Baking.jpeg" alt="">
                 <h3>The Ultimate Guide to Baking</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eum nisi consequuntur voluptatem 
                     impedit quidem sed perspiciatis assumenda dicta necessitatibus
@@ -80,9 +78,27 @@
                 </p>
                 <a href="post3.html">Read More</a>
             </div>
-            <div class="post">
-                <img src="images/b4.jpeg" alt="">
+            <div class="post" data-category="smoothies">
+                <img src="images/Smoothies.jpeg" alt="">
                 <h3>Healthy and Delicious Smoothie Recipes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eum nisi consequuntur voluptatem 
+                    impedit quidem sed perspiciatis assumenda dicta necessitatibus
+                    fugit rerum praesentium architecto, optio quisquam, quo deserunt, eligendi temporibus.
+                </p>
+                <a href="post4.html">Read More</a>
+            </div>
+            <div class="post" data-category="vegetarian">
+                <img src="images/Dinner.jpeg" alt="">
+                <h3>Delicious Vegetarian Dishes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eum nisi consequuntur voluptatem 
+                    impedit quidem sed perspiciatis assumenda dicta necessitatibus
+                    fugit rerum praesentium architecto, optio quisquam, quo deserunt, eligendi temporibus.
+                </p>
+                <a href="post4.html">Read More</a>
+            </div>
+            <div class="post" data-category="seafood">
+                <img src="images/Seafood.jpeg" alt="">
+                <h3>Tasty Seafood Recipes</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eum nisi consequuntur voluptatem 
                     impedit quidem sed perspiciatis assumenda dicta necessitatibus
                     fugit rerum praesentium architecto, optio quisquam, quo deserunt, eligendi temporibus.
@@ -95,23 +111,76 @@
         <div class="cate">
             <h2>Categories</h2>
             <hr>
-            <a href="#">Appetizers</a>
+            <a href="#" data-category="gourmet">Gourmet</a>
             <hr>
-            <a href="#">Main Courses</a>
+            <a href="#" data-category="quick-easy">Quick and Easy</a>
             <hr>
-            <a href="#">Desserts</a>
+            <a href="#" data-category="baking">Baking</a>
             <hr>
-            <a href="#">Beverages</a>
+            <a href="#" data-category="smoothies">Smoothies</a>
             <hr>
-            <a href="#">Vegetarian Dishes</a>
+            <a href="#" data-category="vegetarian">Vegetarian Dishes</a>
             <hr>
-            <a href="#">Seafood Recipes</a>
+            <a href="#" data-category="seafood">Seafood Recipes</a>
             <hr>
         </div>
         
 
 
     </section>
+
+
+
+    <section id="related-blogs">
+        <h2>Other Blogs You Might Like</h2>
+        <div class="marquee">
+            <div class="marquee-content">
+                <a href="post.html" class="related-post">
+                    <img src="images/d1.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Exquisite Italian Dishes</h3>
+                        <button>Read More</button>
+                    </div>
+                </a>
+                <a href="post2.html" class="related-post">
+                    <img src="images/d2.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Delicious Vegan Meals</h3>
+                        <button>Read More</button>
+                    </div>
+                </a>
+                <a href="post3.html" class="related-post">
+                    <img src="images/d3.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Asian Street Food</h3>
+                        <button>Read More</button>
+                    </div>
+                </a>
+                <a href="post4.html" class="related-post">
+                    <img src="images/d4.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Decadent Desserts</h3>
+                        <button>Read More</button>
+                    </div>
+                </a>
+                <a href="post.html" class="related-post">
+                    <img src="images/d5.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Comfort Food Classics</h3>
+                        <button>Read More</button>
+                    </div>
+                </a>
+                <a href="post2.html" class="related-post">
+                    <img src="images/d6.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Exotic Spice Blends</h3>
+                        <button>Read More</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
 
 
 
@@ -181,6 +250,23 @@
             $('nav .navigation u1').removeClass('active')
         });
 
+
+        // Blog filtering script
+        document.querySelectorAll('.cate a').forEach(categoryLink => {
+            categoryLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                const category = this.getAttribute('data-category');
+                const posts = document.querySelectorAll('.post');
+
+                posts.forEach(post => {
+                    if (post.getAttribute('data-category') === category || category === 'all') {
+                        post.style.display = 'block';
+                    } else {
+                        post.style.display = 'none';
+                    }
+                });
+            });
+        });
 
 
     </script>

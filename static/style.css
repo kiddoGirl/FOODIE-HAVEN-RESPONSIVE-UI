@@ -673,6 +673,62 @@ footer .copyright .pro-links i:hover{
     padding: 8vw;
 }
 
+.bloginfo{
+    height: 500px !important;
+}
+
+.chef-info-section {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.chef-info-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chef-card {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    animation: slideInLeft 1s ease-out;
+}
+
+.chef-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+
+.chef-details {
+    flex: 1;
+    text-align: left;
+}
+
+.chef-details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.chef-details p {
+    font-size: 1.1rem;
+}
+
+
+.bloginfo img{
+    height: 300px;
+}
+
 #blog-container .blogs{
     width: 60%;
     height: auto;
@@ -752,12 +808,168 @@ footer .copyright .pro-links i:hover{
 #blog-container .blogpost{
     width: 60%;
     margin: 0 auto;
+    animation: slideInLeft 1s ease-out;
 }
 
 #blog-container .blogpost p{
     text-align: justify;
     padding-bottom: 60px !important;
 }
+
+#blog-container .blogs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+#blog-container .post {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+#blog-container .post img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+#blog-container .post h3 {
+    margin: 20px 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+#blog-container .post p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#blog-container .post a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#blog-container .post a:hover {
+    background-color: #2980b9;
+}
+
+#blog-container .post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Styles for the continuous moving cards */
+#related-blogs {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+    margin-top: none;
+}
+
+#related-blogs h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #293038;
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.related-post {
+    display: inline-block;
+    position: relative;
+    width: 300px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    margin: 0 10px;
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.related-post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire area */
+    display: block;
+}
+
+.related-post .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.related-post:hover .overlay {
+    opacity: 1;
+}
+
+.related-post h3 {
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.related-post button {
+    background-color: #f7b731;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .blogs .post, .related-post {
+        width: 100%;
+        height: auto; /* Allow height to adjust based on content */
+    }
+    .marquee-content {
+        animation: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 
 #course-inner{
     display: flex;
@@ -858,8 +1070,10 @@ footer .copyright .pro-links i:hover{
 #course-inner .enroll{
     width: 300px;
     padding: 0 30px 30px 30px;
-    border-radius: 11px;
     box-shadow: 0px 20px 40px 0 rgb(11 2 55 / 8%);
+    margin-top: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 #course-inner .enroll h3{
