@@ -46,7 +46,7 @@ nav p{
 }
 
 nav .title{
-    font-size: 35px;
+    font-size: 28px;
     font-weight: bolder;
     color: rgb(21,21,100);
     font-family:'fantasy';
@@ -677,6 +677,7 @@ footer .copyright .pro-links i:hover{
     height: 500px !important;
 }
 
+/* Chef Info Section */
 .chef-info-section {
     margin-top: 40px;
     margin-bottom: 15px;
@@ -708,7 +709,6 @@ footer .copyright .pro-links i:hover{
     object-fit: cover;
     margin-right: 20px;
 }
-
 
 .chef-details {
     flex: 1;
@@ -876,7 +876,6 @@ footer .copyright .pro-links i:hover{
     padding: 50px 0;
     background-color: #f8f8f8;
     text-align: center;
-    margin-top: none;
 }
 
 #related-blogs h2 {
@@ -912,6 +911,7 @@ footer .copyright .pro-links i:hover{
     height: 200px; /* Fixed height */
     margin: 0 10px;
     overflow: hidden; /* Ensure content doesn't overflow */
+    vertical-align: top; /* Align inline-block elements properly */
 }
 
 .related-post img {
@@ -944,6 +944,7 @@ footer .copyright .pro-links i:hover{
     color: white;
     margin-bottom: 10px;
     text-align: center;
+    font-size: 18px;
 }
 
 .related-post button {
@@ -954,21 +955,6 @@ footer .copyright .pro-links i:hover{
     cursor: pointer;
     font-size: 16px;
 }
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .blogs .post, .related-post {
-        width: 100%;
-        height: auto; /* Allow height to adjust based on content */
-    }
-    .marquee-content {
-        animation: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 
 
 #course-inner{
@@ -1366,12 +1352,55 @@ footer .copyright .pro-links i:hover{
     #contact .getin{
         width: 250px;
     }
-      
 
+    nav.title{
+        font-size: 20px;
+    }
+
+    .related-post {
+        width: 250px;
+        height: 170px;
+    }
+
+    .related-post h3 {
+        font-size: 16px;
+    }
+
+    .related-post button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .chef-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .chef-image img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .chef-details {
+        text-align: center;
+    }
+
+    .chef-details h3 {
+        font-size: 1.6rem;
+    }
+
+    .chef-details p {
+        font-size: 1rem;
+    }
 
 }
 
+
 @media (max-width:475px){
+    nav.title{
+        font-size: 20px;
+    }
     #registration {
         display: flex;
         flex-direction: column;
@@ -1463,6 +1492,40 @@ footer .copyright .pro-links i:hover{
     #contact .form .form-row input{
         width: 100%;
     }
+
+    .related-post {
+        width: 200px;
+        height: 150px;
+    }
+
+    .related-post h3 {
+        font-size: 14px;
+    }
+
+    .related-post button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    .chef-info-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .chef-card {
+        padding: 10px;
+    }
+
+    .chef-image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .chef-details h3 {
+        font-size: 1.4rem;
+    }
+
+    .chef-details p {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width:376px){
@@ -1470,4 +1533,9 @@ footer .copyright .pro-links i:hover{
         width: 100%;
         margin-bottom: 20px;
     }
+    nav p .title{
+        font-size: 20px;
+    }
 }
+
+

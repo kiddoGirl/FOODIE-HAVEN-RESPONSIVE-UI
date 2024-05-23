@@ -160,7 +160,7 @@ input {
 
 .overlay {
 	background: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.9));
-    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.9)),url(../images/home.jpg);
+    background-image: linear-gradient(rgba(9,5,54,0.2),rgba(5,4,46,0.5)),url(../images/login.avif);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
