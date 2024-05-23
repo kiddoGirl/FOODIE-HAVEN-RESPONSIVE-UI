@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
+  <head>
 
-    <head>
-
-
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-        <title>Flavors of Gastronomy</title>
+    <title>Flavors of Gastronomy</title>
     
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
     
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-5RlZhhof1+IRLckH4C8Iw0WMTx4Xex+MuvZxXNcB1SgDfqIe8wwiG3lQ5bNgNme5O2H0X6p6/rtV3yCRzy6b7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-5RlZhhof1+IRLckH4C8Iw0WMTx4Xex+MuvZxXNcB1SgDfqIe8wwiG3lQ5bNgNme5O2H0X6p6/rtV3yCRzy6b7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    <link rel="stylesheet" href="./static/log-reg-style.css">
     
-        <link rel="stylesheet" href="./static/log-reg-style.css">
-    
-        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
       
-    </head>
+  </head>
 
 
 <body>
@@ -28,6 +25,7 @@
   <div class="container" id="container">
 
     <div class="form-container sign-up-container" id="signupSection" >
+
       <form action="#">
         <h2>Create Account</h2>  
         <input type="text" placeholder="Username" id="name" required>
@@ -35,9 +33,12 @@
         <input type="text" placeholder="Gender" id="gender" readonly> 
         <button style="margin-top:20px;" id="signupButton" onclick="signup()" disabled>Sign Up</button>
       </form>
+
     </div>
 
+
     <div class="form-container sign-in-container">
+
       <form id="loginForm">
         <h2>Login</h2>
         <input type="text" id="username" placeholder="Username" required>
@@ -45,12 +46,14 @@
         <button type="submit" style="margin-top: 20px;">Login</button>
         <a href="#">Forgot your password?</a>
       </form>
+
     </div>
 
 
     <div class="overlay-container">
 
       <div class="overlay">
+
         <div class="overlay-panel overlay-left">
           <h1>Welcome Back!</h1>
           <p>To keep connected with us please login with your personal info</p>
@@ -64,23 +67,27 @@
         </div>
 
       </div>
+
     </div>
+
   </div>
   
   
-      <script>
-        const signUpButton = document.getElementById('signUp');
-        const signInButton = document.getElementById('signIn');
-        const container = document.getElementById('container');
+  <script>
 
-        signUpButton.addEventListener('click', () => {
-            container.classList.add("right-panel-active");
-        });
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('container');
 
-        signInButton.addEventListener('click', () => {
-            container.classList.remove("right-panel-active");
-        });
-      </script>
+    signUpButton.addEventListener('click', () => {
+      container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener('click', () => {
+      container.classList.remove("right-panel-active");
+    });
+    
+  </script>
     
 
 

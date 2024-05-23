@@ -27,6 +27,8 @@ h6{
     animation: slideInLeft 1s ease-out; 
 }
 
+/* NAV STYLE */
+
 nav{
     position: fixed;
     width: 100%;
@@ -118,9 +120,9 @@ nav .navigation u1 li a:hover{
     color:#f0c938;
 }
 
+/* HOME PAGE STYLE */
 
 #home  {
-
     background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.9)),url(../images/home.jpg);
     width: 100%;
     height: 100vh;
@@ -135,15 +137,12 @@ nav .navigation u1 li a:hover{
     animation: fadeInUp 1s ease-out;
 }
 
-
-
 #home h2{
     color: #fff;
     font-size: 2.2rem;
     letter-spacing: 1px;
     animation: slideInLeft 1s ease-out; 
 }
-
 
 #home p{
     width: 50%;
@@ -178,7 +177,6 @@ nav .navigation u1 li a:hover{
     color:  rgb(21, 21, 100);
     background-color:#fff;
 }
-
 
 #home a.yellow{
     color: #fff;
@@ -253,7 +251,7 @@ nav .navigation u1 li a:hover{
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
 }
 
 #course .courses:hover {
@@ -280,7 +278,7 @@ nav .navigation u1 li a:hover{
     font-size: 1.2rem;
     font-weight: 600;
     margin: 8px 0;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
 }
 
 #course .courses .star {
@@ -297,19 +295,18 @@ nav .navigation u1 li a:hover{
     background-color: rgb(74, 74, 136);
     color: #fff;
     line-height: 40px;
-    width: 60px; /* Adjusted width for better readability */
+    width: 60px; 
     height: 60px;
     text-align: center;
-    border-radius: 30px; /* Rounded bottom left corner */
+    border-radius: 30px; 
     position: absolute;
-    right: -10px; /* Positioned slightly outside */
-    bottom: -10px; /* Positioned slightly inside */
+    right: -10px; 
+    bottom: -10px; 
     font-size: 0.9rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 #registration {
     padding: 6vw 8vw;
@@ -325,7 +322,7 @@ nav .navigation u1 li a:hover{
 
 #registration .remainder {
     color: #fff;
-    animation: fadeInUp 1s ease-out; /* Animation for remainder section */
+    animation: fadeInUp 1s ease-out; 
 }
 
 @keyframes fadeInUp {
@@ -341,14 +338,14 @@ nav .navigation u1 li a:hover{
 
 #registration .remainder h1 {
     color: #fff;
-    font-size: 2rem; /* Adjusted font size for emphasis */
-    margin-bottom: 10px; /* Added margin for spacing */
+    font-size: 2rem; 
+    margin-bottom: 10px; 
 }
 
 #registration .remainder .time {
     display: flex;
     margin-top: 40px;
-    animation: slideInLeft 1s ease-out; /* Animation for time countdown */
+    animation: slideInLeft 1s ease-out; 
 }
 
 @keyframes slideInLeft {
@@ -382,7 +379,7 @@ nav .navigation u1 li a:hover{
     flex-direction: column;
     padding: 40px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    animation: fadeInUp 1s ease-out; /* Animation for form section */
+    animation: fadeInUp 1s ease-out; 
 }
 
 #registration .form input {
@@ -418,7 +415,6 @@ nav .navigation u1 li a:hover{
     color: rgb(21, 21, 100);
     background-color: #fff;
 }
-
 
 #exprts {
     padding: 8vw;
@@ -461,6 +457,9 @@ nav .navigation u1 li a:hover{
     border: 1px solid rgb(21, 21, 100);
     cursor: pointer;
 }
+
+
+/* FOOTER PAGE STYLE */
 
 footer{
     padding: 8vw;
@@ -550,26 +549,27 @@ footer .copyright .pro-links i{
 }
  
 footer .copyright .pro-links i:hover{
-     background: #fdc938;
-     color:#2c2c2c;
+    background: #fdc938;
+    color:#2c2c2c;
      
 }
 
-#about-home  {
 
-     background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url(../images/home.jpg) ;
-     width: 100%;
-     height: 60vh;
-     background-size: cover;
-     background-position: center;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     text-align: center;
-     padding-top: 40px;
-     animation: fadeInUp 1s ease-out;
-     
+/* ABOUT PAGE STYLE */
+
+#about-home  {
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url(../images/home.jpg) ;
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    animation: fadeInUp 1s ease-out;  
 }
 
 #about-home h2{
@@ -580,12 +580,12 @@ footer .copyright .pro-links i:hover{
 
 #about-container {
     display: flex;
-    align-items: center; /* Align items vertically */
+    align-items: center; 
 }
 
 #about-container .about-img {
-    width: 50%; /* Adjust width as needed */
-    height: auto; /* Adjust height if necessary */
+    width: 50%; 
+    height: auto; 
     padding-right: 60px;
     padding-left: 60px;
     margin-top: 20px;
@@ -594,11 +594,11 @@ footer .copyright .pro-links i:hover{
 
 #about-container .about-img img {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
+    height: auto; 
 }
 
 #about-container .about-text {
-    width: 60%; /* Adjust width as needed */
+    width: 60%; 
     animation: slideInLeft 1s ease-out;
 }
 
@@ -624,7 +624,7 @@ footer .copyright .pro-links i:hover{
     background-size: cover;
     background-position: center;
     margin-right: 20px;
-    font-size: 40px; /* Adjust icon size as needed */
+    font-size: 40px; 
     color: rgb(21, 21, 100);
 }
 
@@ -651,9 +651,9 @@ footer .copyright .pro-links i:hover{
 }
 
 #trust .trust-img img {
-    width: 150px; /* Adjust size as needed */
+    width: 150px; 
     height: auto;
-    margin: 0 20px; /* Adjust spacing between logos */
+    margin: 0 20px; 
     margin-top: 60px;
 }
 
@@ -666,6 +666,9 @@ footer .copyright .pro-links i:hover{
     }
 }
 
+
+/* BLOG PAGE STYLE */
+
 #blog-container{
     display: flex;
     align-items: flex-start;
@@ -677,7 +680,6 @@ footer .copyright .pro-links i:hover{
     height: 500px !important;
 }
 
-/* Chef Info Section */
 .chef-info-section {
     margin-top: 40px;
     margin-bottom: 15px;
@@ -723,7 +725,6 @@ footer .copyright .pro-links i:hover{
 .chef-details p {
     font-size: 1.1rem;
 }
-
 
 .bloginfo img{
     height: 300px;
@@ -870,8 +871,6 @@ footer .copyright .pro-links i:hover{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-
-/* Styles for the continuous moving cards */
 #related-blogs {
     padding: 50px 0;
     background-color: #f8f8f8;
@@ -907,17 +906,17 @@ footer .copyright .pro-links i:hover{
 .related-post {
     display: inline-block;
     position: relative;
-    width: 300px; /* Fixed width */
-    height: 200px; /* Fixed height */
+    width: 300px; 
+    height: 200px; 
     margin: 0 10px;
-    overflow: hidden; /* Ensure content doesn't overflow */
-    vertical-align: top; /* Align inline-block elements properly */
+    overflow: hidden;
+    vertical-align: top; 
 }
 
 .related-post img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the image covers the entire area */
+    object-fit: cover; 
     display: block;
 }
 
@@ -956,6 +955,8 @@ footer .copyright .pro-links i:hover{
     font-size: 16px;
 }
 
+
+/* COURSE INFO PAGE STYLE */
 
 #course-inner{
     display: flex;
@@ -1098,6 +1099,9 @@ footer .copyright .pro-links i:hover{
     background: #1c0b74;
 }
 
+
+/* CONTACT PAGE STYLE */
+
 #contact{
     padding: 8vw;
     display: flex;
@@ -1233,9 +1237,7 @@ footer .copyright .pro-links i:hover{
 }
 
 
-
-
-
+/* RESPONSIVE FOR ALL */
 
 @media (max-width:769px){
 
