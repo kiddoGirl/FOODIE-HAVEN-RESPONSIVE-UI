@@ -2,11 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'fantasy';
-}
-
-body{
-    font-family:"Poppins",sans-serif;
+    font-family: 'Merriweather', serif;
 }
 
 h1{
@@ -14,6 +10,7 @@ h1{
     font-weight: 700;
     color:rgb(35,35,85);
     animation: slideInLeft 1s ease-out; 
+    margin-bottom: 15px;
 }
 
 span{
@@ -142,13 +139,14 @@ nav .navigation u1 li a:hover{
     font-size: 2.2rem;
     letter-spacing: 1px;
     animation: slideInLeft 1s ease-out; 
+    margin-bottom: 15px;
 }
 
 #home p{
     width: 50%;
     color: #fff;
     font-size: 0.9rem;
-    line-height: 25px;
+    line-height: 35px;
     animation: slideInLeft 1s ease-out; 
 }
 
@@ -218,12 +216,14 @@ nav .navigation u1 li a:hover{
     font-weight: 600;
     color:rgb(46, 46, 59);
     padding: 13px 0 7px 0;
+    margin-bottom: 5px;
 }
 
 #features .fea-box p{
     font-size: 1rem;
     font-weight: 400;
     color:rgb(70, 70, 87);
+    line-height: 30px;
     
 }
 
@@ -605,11 +605,13 @@ footer .copyright .pro-links i:hover{
 #about-container .about-text h2 {
     color: #293038;
     padding-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 #about-container .about-text p {
     color: #686f7a;
     font-weight: 300;
+    line-height: 25px;
 }
 
 #about-container .about-text .about-fe {
@@ -632,9 +634,14 @@ footer .copyright .pro-links i:hover{
     width: 90%;
 }
 
+#about-container .about-text .about-fe .fe-text p{
+    line-height: 25px;
+}
+
 #about-container .about-text .about-fe .fe-text h5 {
     font-size: 16px;
     color: #293038;
+    margin-bottom: 5px;
 }
 
 #trust{
@@ -773,6 +780,7 @@ footer .copyright .pro-links i:hover{
 #blog-container .blogs .post p{
     color: #757573;
     padding-bottom:20px;
+    line-height: 25px;
 }
 
 #blog-container .blogs .post a{
@@ -972,6 +980,7 @@ footer .copyright .pro-links i:hover{
 
 #course-inner p{
     color: #64626e;
+    line-height: 25px;
 }
 
 #course-inner hr{
